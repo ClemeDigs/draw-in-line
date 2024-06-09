@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    background-color: rgb(228, 249, 255);
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.drawing-board {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+canvas {
+    display: block;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 0 0 30px 30px;
+}
+
+button {
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.erreurs {
+    margin: 2rem;
+}
+
+.modale {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modale div {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 40%;
+    height: 40%;
+    padding: 3rem;
+}
+
+.modale div p {
+    clear: both;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn-close {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
