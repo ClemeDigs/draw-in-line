@@ -9,16 +9,15 @@
 </head>
 <body>
 
-    <main>
-        <section class="drawing-board">
-            <canvas width="480" height="320"></canvas>
-            <button class="btn-clear">Clear</button>
-        </section>
+    <header>
+        <h1>Retrace la lettre, sans dépasser!</h1>
+    </header>
+
+    <main class="drawing-board">
+        <span class="level">Niveau <span class="number_level">1</span></span>
+        <canvas width="600" height="400"></canvas>
+        <button class="btn-clear">Clear</button>
         <div class="modale hidden">
-            <div class="rules hidden">
-                <button class="btn-close">X</button>
-                <p>Retrace la lettre sans dépasser et en un seul coup!</p>
-            </div>
             <div class="lost hidden">
                 <button class="btn-close">X</button>
                 <p>Tu as dépassé!</p>
@@ -27,17 +26,6 @@
                 <button class="btn-close">X</button>
                 <p>Bravo, tu as gagné!</p>
             </div>
-        </div>
-        <div class="erreurs">
-            <h2>À régler :</h2>
-            <ul>
-                <li>Déplacer le canvas</li>
-                <li>Lui donner une valeur en pourcentage</li>
-                <li>Quand on perd, effacer le point de départ</li>
-                <li>Recalculer la fonction pixelCompare() pour pouvoir l'adapter à chaque lettre</li>
-                <li>Trouver pourquoi la typo ne se charge qu'après le premier essai</li>
-                <li>Trouver un bon écouteur d'évènement pour le cell</li>
-            </ul>
         </div>
     </main>
 
